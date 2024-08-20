@@ -1,0 +1,8 @@
+services:
+  backend:
+    build: .
+    container_name: langchain
+    volumes:
+      - ./:/app/src/
+    ports:
+      - 3002:3002
