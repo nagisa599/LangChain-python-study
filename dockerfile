@@ -15,6 +15,9 @@ RUN pip install --upgrade pip
 
 # install python lib 
 RUN pip install -r requirements.txt
+# インストールされたパッケージをコンソールにログ出力。
+RUN pip freeze
+RUN pip freeze > installed_packages.txt
 
 # Command to run main.py every time the container starts
 CMD ["python", "main.py"]

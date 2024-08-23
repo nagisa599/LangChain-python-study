@@ -6,3 +6,4 @@ services:
       - ./:/app/src/
     ports:
       - 3002:3002
+    # restart: always
