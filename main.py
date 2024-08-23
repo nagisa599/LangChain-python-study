@@ -1,9 +1,7 @@
-# from models.llms_model import *
-# from models.chat_model import *
-from langchain.prompts import PromptTemplate  # 正しいインポート元
+from output_parsers.output_parsers import OutPutParserTest
 
 def main():
-    print("modesl,promptファイルから各自呼び出し")
+  OutPutParserTest()
 
 if __name__ == "__main__":
     main()
